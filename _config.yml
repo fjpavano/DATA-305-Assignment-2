@@ -1,0 +1,13 @@
+title: "Francesco Pavano"
+description: "Finance + Innovation & Entrepreneurship + Data Science @ William & Mary"
+url: ""
+baseurl: "/DATA-305-Assignment-2"
+
+theme: null
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+collections:
+  posts:
+    output: true
