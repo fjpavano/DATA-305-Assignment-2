@@ -13,9 +13,13 @@
     <div class="container">
       {% include nav.html %}
 
-      <main class="main">
-        {{ content }}
-      </main>
+<div class="layout">
+  {% include sidebar.html %}
+
+  <main class="main">
+    {{ content }}
+  </main>
+</div>
 
       {% include footer.html %}
     </div>
