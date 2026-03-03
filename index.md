@@ -10,34 +10,36 @@ title: Home
     This site is my GitHub Pages hub for my resume and short write-ups.
   </p>
 
-  <div class="badges" aria-label="Quick highlights">
-    <span class="badge">Finance</span>
-    <span class="badge">Entrepreneurship</span>
-    <span class="badge">Data Science</span>
-    <span class="badge">Excel</span>
-    <span class="badge">Python</span>
-    <span class="badge">R</span>
+  <div class="badges" aria-label="Contact links">
+    <a class="badge" href="mailto:fjpavano@wm.edu">Email</a>
+    <a class="badge" href="https://www.linkedin.com/in/francesco-pavano" target="_blank" rel="noreferrer">LinkedIn</a>
+    <a class="badge" href="https://github.com/fjpavano" target="_blank" rel="noreferrer">GitHub</a>
   </div>
 </section>
 
 <section class="grid">
   <!-- LEFT COLUMN -->
   <div class="card">
-    <h2 class="section-title">About</h2>
-    <p class="muted">
-      I’m interested in investing and applied analytics — using data to make better decisions and communicate ideas clearly.
-      I’ve worked in wealth management and I’m involved in student organizations on campus.
-    </p>
+    <h2 class="section-title">What I’m focused on</h2>
+    <ul class="prose">
+      <li><strong>Finance + investing:</strong> building a stronger foundation in markets, portfolio thinking, and risk.</li>
+      <li><strong>Applied analytics:</strong> using Excel, Python, and R to turn messy data into clear decisions.</li>
+      <li><strong>Communication:</strong> writing and presenting ideas in a way that’s simple and convincing.</li>
+    </ul>
 
     <hr class="hr" />
 
-    <h2 class="section-title">Quick Links</h2>
-    <p class="prose">
-      <strong>Resume:</strong> <a href="{{ site.baseurl }}/resume/">View my resume</a><br/>
-      <strong>Blog:</strong> <a href="{{ site.baseurl }}/blog/">Read posts</a><br/>
-      <strong>Email:</strong> <a href="mailto:fjpavano@wm.edu">fjpavano@wm.edu</a><br/>
-      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/francesco-pavano" target="_blank" rel="noreferrer">francesco-pavano</a><br/>
-      <strong>GitHub:</strong> <a href="https://github.com/fjpavano" target="_blank" rel="noreferrer">fjpavano</a>
+    <h2 class="section-title">Outside the classroom</h2>
+    <ul class="prose">
+      <li><strong>Club Soccer A (Treasurer):</strong> managing team budget and logistics.</li>
+      <li><strong>Delta Chi (Philanthropy Chair):</strong> planning fundraising events and execution.</li>
+      <li><strong>Golf + fitness:</strong> always chasing better performance and consistency.</li>
+    </ul>
+
+    <hr class="hr" />
+
+    <p class="muted">
+      Want the full details? See my <a href="{{ site.baseurl }}/resume/">resume</a>.
     </p>
   </div>
 
