@@ -30,11 +30,22 @@ title: Home
     <hr class="hr" />
 
     <h2 class="section-title">Outside the classroom</h2>
-    <ul class="prose">
-      <li><strong>Club Soccer A (Treasurer):</strong> managing team budget and logistics.</li>
-      <li><strong>Delta Chi (Philanthropy Chair):</strong> planning fundraising events and execution.</li>
-      <li><strong>Golf + fitness:</strong> always chasing better performance and consistency.</li>
-    </ul>
+
+<div class="prose">
+  <p>
+    <strong>Competitive Soccer</strong><br>
+    As a former captain and current club player, soccer has shaped how I approach preparation and accountability. 
+    Competing at a high level has reinforced the importance of discipline, adaptability, and executing under pressure. 
+    These are lessons I carry into academic and professional settings.
+  </p>
+
+  <p>
+    <strong>Golf & Strategic Thinking</strong><br>
+    Golf has become a personal study in patience and precision. I’m drawn to the strategic elements of the game — 
+    course management, incremental improvement, and the psychological aspect. The discipline required to refine 
+    small details over time mirrors how I approach long-term goals.
+  </p>
+</div>
 
     <hr class="hr" />
 
