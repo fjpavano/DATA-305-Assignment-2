@@ -21,6 +21,7 @@ title: Home
 </section>
 
 <section class="grid">
+  <!-- LEFT COLUMN -->
   <div class="card">
     <h2 class="section-title">About</h2>
     <p class="muted">
@@ -30,42 +31,40 @@ title: Home
 
     <hr class="hr" />
 
-    <h2 class="section-title">What you’ll find here</h2>
-    <ul class="prose">
-      <li><a href="{{ site.baseurl }}/resume/">Resume</a> — education, experience, leadership, and skills</li>
-      <li><a href="{{ site.baseurl }}/blog/">Blog</a> — short posts (including notes from building this site)</li>
-    </ul>
-  </div>
-
-  <div class="card">
     <h2 class="section-title">Quick Links</h2>
     <p class="prose">
+      <strong>Resume:</strong> <a href="{{ site.baseurl }}/resume/">View my resume</a><br/>
+      <strong>Blog:</strong> <a href="{{ site.baseurl }}/blog/">Read posts</a><br/>
       <strong>Email:</strong> <a href="mailto:fjpavano@wm.edu">fjpavano@wm.edu</a><br/>
       <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/francesco-pavano" target="_blank" rel="noreferrer">francesco-pavano</a><br/>
       <strong>GitHub:</strong> <a href="https://github.com/fjpavano" target="_blank" rel="noreferrer">fjpavano</a>
     </p>
-
-    <hr class="hr" />
-
-    <h2 class="section-title">Currently</h2>
-    <ul class="prose">
-      <li>Building this Jekyll site for DATA 305</li>
-      <li>Developing stronger portfolio + data workflows (Excel/Python/R)</li>
-      <li>Looking for ways to apply analytics in finance</li>
-    </ul>
   </div>
-</section>
 
-<section class="card" style="margin-top:16px;">
-  <h2 class="section-title">Featured Post</h2>
-  {% assign latest = site.posts.first %}
-  {% if latest %}
-    <p class="prose">
-      <a href="{{ site.baseurl }}{{ latest.url }}"><strong>{{ latest.title }}</strong></a>
-      <span class="muted"> — {{ latest.date | date: "%b %d, %Y" }}</span>
-    </p>
-    <p class="muted">{{ latest.excerpt | strip_html | truncate: 160 }}</p>
-  {% else %}
-    <p class="muted">No posts yet.</p>
-  {% endif %}
+  <!-- RIGHT COLUMN -->
+  <div class="card">
+    <h2 class="section-title">Featured Post</h2>
+
+    {% assign latest = site.posts.first %}
+    {% if latest %}
+      <a class="featured" href="{{ site.baseurl }}{{ latest.url }}">
+        <img
+          class="featured__img"
+          src="{{ site.baseurl }}/assets/img/featured.jpg"
+          alt="Featured blog post image"
+          loading="lazy"
+        />
+        <div class="featured__meta">
+          <div class="featured__title">{{ latest.title }}</div>
+          <div class="muted">{{ latest.date | date: "%b %d, %Y" }}</div>
+          <p class="featured__excerpt muted">
+            {{ latest.excerpt | strip_html | truncate: 220 }}
+          </p>
+          <div class="featured__cta">Read the post →</div>
+        </div>
+      </a>
+    {% else %}
+      <p class="muted">No posts yet.</p>
+    {% endif %}
+  </div>
 </section>
