@@ -161,3 +161,14 @@ a:hover{ text-decoration: underline; }
 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+.badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.badge:hover{
+  background: rgba(255,255,255,.06);
+  text-decoration: none;
+}
