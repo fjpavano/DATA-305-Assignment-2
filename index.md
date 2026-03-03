@@ -7,7 +7,7 @@ title: Home
   <h1>Hi, I’m Francesco Pavano.</h1>
   <p>
     I’m a William & Mary student studying Finance with a concentration in Innovation & Entrepreneurship,
-    and a minor in Data Science. :contentReference[oaicite:2]{index=2}
+    and a minor in Data Science.
   </p>
 
   <div class="badges" aria-label="Quick highlights">
@@ -29,7 +29,6 @@ title: Home
     <hr class="hr" />
     <p>
       This site includes my resume and a blog where I’ll post short write-ups (including notes from building this site).
-      :contentReference[oaicite:3]{index=3}
     </p>
   </div>
 
