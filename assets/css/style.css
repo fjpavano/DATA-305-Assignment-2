@@ -145,38 +145,19 @@ a:hover{ text-decoration: underline; }
   margin-top: 18px;
   align-items: start;
 }
-/* Featured post card */
-.featured{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
 .featured__img{
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-}
+  border-radius: 18px;
 
-.featured__title{
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  margin-bottom: 4px;
-}
+  /* Soft glass border */
+  border: 1px solid rgba(255,255,255,0.08);
 
-.featured__excerpt{
-  margin: 10px 0 0;
-  font-size: 14px;
-}
+  /* Inner subtle highlight */
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 12px 30px rgba(0,0,0,0.35);
 
-.featured__cta{
-  margin-top: 10px;
-  display: inline-block;
-  font-weight: 700;
-  color: var(--accent);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
