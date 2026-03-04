@@ -5,7 +5,7 @@ title: Home
 
 <section class="card hero hero-layout">
   <div class="hero-text">
-    <h1>Hi, I’m Francesco Pavano.</h1>
+    <h1>Hi, I’m Francesco Pavano</h1>
     <p>
       I’m a William & Mary student studying Finance (Innovation & Entrepreneurship concentration)
       with a minor in Data Science. This site is my GitHub Pages hub for my resume and short write-ups.
