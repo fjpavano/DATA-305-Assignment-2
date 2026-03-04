@@ -8,7 +8,6 @@ permalink: /resume/
   <div class="resume-top__left">
     <h2 style="margin:0 0 6px;">Resume (PDF)</h2>
     <p class="muted" style="margin:0;">
-      For the cleanest view, use the embedded PDF below. A text version is included for accessibility and quick scanning.
     </p>
   </div>
 
