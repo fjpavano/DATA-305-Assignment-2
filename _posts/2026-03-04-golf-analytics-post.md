@@ -5,7 +5,7 @@ date: 2026-03-04
 featured: true
 ---
 
-Standing over an approach shot to a tucked pin, the aggressive line is often the most tempting. The flag looks accessible, and the upside feels worth it. What’s less visible is the full distribution of outcomes surrounding that decision. In golf, as in finance, the question isn’t simply whether a shot *can* be executed, but whether its expected value justifies the variance it introduces.
+Standing over an approach shot to a tucked pin, the aggressive line is often the most tempting. The flag looks accessible, and the upside feels worth it. What’s less visible is the full distribution of outcomes surrounding that decision. In golf, as in finance, the question isn’t simply whether a shot can be executed, but whether its expected value justifies the variance it introduces.
 
 At its core, golf is a risk management problem.
 
