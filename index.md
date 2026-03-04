@@ -7,8 +7,7 @@ title: Home
   <div class="hero-text">
     <h1>Hi, I’m Francesco</h1>
     <p>
-      I’m a William & Mary student studying Finance (Innovation & Entrepreneurship concentration)
-      with a minor in Data Science. This site is my GitHub Pages hub for my resume and short write-ups.
+      I’m a senior at William & Mary studying Finance with a concentration in Innovation & Entrepreneurship and a minor in Data Science. I’m particularly interested in how analytical thinking, technology, and disciplined decision-making intersect within financial markets. This site serves as a hub for my resume, selected writing, and ongoing exploration of ideas at the intersection of finance, data, and performance.
     </p>
 
     <div class="badges" aria-label="Contact links">
