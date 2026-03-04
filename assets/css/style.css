@@ -224,3 +224,48 @@ a:hover{ text-decoration: underline; }
 @media (max-width: 900px){
   .grid{ grid-template-columns: 1fr; }
 }
+/* ===== Accent across ALL pages ===== */
+
+/* Page titles (Resume, Blog, Posts) */
+.page-title{
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Prose headings inside pages/posts */
+.prose h2, .prose h3{
+  position: relative;
+  padding-left: 14px;
+  margin-top: 22px;
+}
+
+.prose h2::before, .prose h3::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+  width:4px;
+  height: 70%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--accent), var(--accent2));
+}
+
+/* Blog list links get a gradient underline on hover */
+.prose a{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.prose a:hover{
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, var(--accent), var(--accent2)) 1;
+  text-decoration: none;
+}
+
+/* Resume accordion gets a subtle accent border */
+.resume-details{
+  border: 1px solid rgba(0,0,0,0); /* reset */
+  border-image: linear-gradient(90deg, var(--accent), var(--accent2)) 1;
+}
