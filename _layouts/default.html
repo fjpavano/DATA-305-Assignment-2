@@ -19,5 +19,37 @@
 
       {% include footer.html %}
     </div>
+    <script>
+  (function () {
+    const STORAGE_KEY = "theme";
+    const root = document.documentElement;
+    const btn = document.getElementById("themeToggle");
+
+    function applyTheme(theme) {
+      root.setAttribute("data-theme", theme);
+      if (btn) {
+        const isDark = theme === "dark";
+        btn.querySelector(".theme-toggle__icon").textContent = isDark ? "🌙" : "☀️";
+        btn.querySelector(".theme-toggle__text").textContent = isDark ? "Dark" : "Light";
+      }
+    }
+
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    // Default: dark (your current site), unless user previously chose light
+    const initial = saved ? saved : "dark";
+    applyTheme(initial);
+
+    if (btn) {
+      btn.addEventListener("click", function () {
+        const current = root.getAttribute("data-theme") || "dark";
+        const next = current === "dark" ? "light" : "dark";
+        localStorage.setItem(STORAGE_KEY, next);
+        applyTheme(next);
+      });
+    }
+  })();
+</script>
   </body>
 </html>
