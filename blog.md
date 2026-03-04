@@ -9,18 +9,8 @@ permalink: /blog/
     <div class="blog-hero__text">
       <h1 class="section-title">Blog</h1>
       <p class="muted">
-        Short write-ups on finance, analytics, and performance. Some posts are practical (how I built things),
-        others are exploratory (ideas I’m testing or learning in real time).
+        Short write-ups on things I care about.
       </p>
-    </div>
-
-    <div class="blog-hero__img">
-      <img
-        src="{{ site.baseurl }}/assets/img/featured.jpg"
-        alt="Featured blog visual"
-        loading="lazy"
-      />
-    </div>
   </div>
 </section>
 
