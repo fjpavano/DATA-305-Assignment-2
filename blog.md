@@ -4,13 +4,47 @@ title: Blog
 permalink: /blog/
 ---
 
-Here are my posts:
+<section class="card">
+  <div class="blog-hero">
+    <div class="blog-hero__text">
+      <h1 class="section-title">Blog</h1>
+      <p class="muted">
+        Short write-ups on finance, analytics, and performance. Some posts are practical (how I built things),
+        others are exploratory (ideas I’m testing or learning in real time).
+      </p>
+    </div>
 
-<ul>
+    <div class="blog-hero__img">
+      <img
+        src="{{ site.baseurl }}/assets/img/featured.jpg"
+        alt="Featured blog visual"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <span class="muted"> — {{ post.date | date: "%b %d, %Y" }}</span>
-    </li>
+    <article class="card post-card">
+      <a class="post-card__link" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="post-card__img">
+          <img
+            src="{{ site.baseurl }}{{ post.image | default: '/assets/img/featured.jpg' }}"
+            alt="{{ post.title }} thumbnail"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="post-card__content">
+          <div class="post-card__title">{{ post.title }}</div>
+          <div class="muted">{{ post.date | date: "%b %d, %Y" }}</div>
+          <p class="post-card__excerpt muted">
+            {{ post.excerpt | strip_html | truncate: 160 }}
+          </p>
+          <div class="post-card__cta">Read →</div>
+        </div>
+      </a>
+    </article>
   {% endfor %}
-</ul>
+</section>
