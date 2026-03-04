@@ -23,32 +23,34 @@
   (function () {
     const STORAGE_KEY = "theme";
     const root = document.documentElement;
-    const btn = document.getElementById("themeToggle");
+
+    function updateButton(theme) {
+      const btn = document.getElementById("themeToggle");
+      if (!btn) return;
+      const icon = btn.querySelector(".theme-toggle__icon");
+      const text = btn.querySelector(".theme-toggle__text");
+      const isDark = theme === "dark";
+      if (icon) icon.textContent = isDark ? "🌙" : "☀️";
+      if (text) text.textContent = isDark ? "Dark" : "Light";
+    }
 
     function applyTheme(theme) {
       root.setAttribute("data-theme", theme);
-      if (btn) {
-        const isDark = theme === "dark";
-        btn.querySelector(".theme-toggle__icon").textContent = isDark ? "🌙" : "☀️";
-        btn.querySelector(".theme-toggle__text").textContent = isDark ? "Dark" : "Light";
-      }
+      updateButton(theme);
     }
 
     const saved = localStorage.getItem(STORAGE_KEY);
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    // Default: dark (your current site), unless user previously chose light
-    const initial = saved ? saved : "dark";
+    const initial = saved ? saved : "dark"; // default dark
     applyTheme(initial);
 
-    if (btn) {
-      btn.addEventListener("click", function () {
-        const current = root.getAttribute("data-theme") || "dark";
-        const next = current === "dark" ? "light" : "dark";
-        localStorage.setItem(STORAGE_KEY, next);
-        applyTheme(next);
-      });
-    }
+    document.addEventListener("click", function (e) {
+      const btn = e.target.closest("#themeToggle");
+      if (!btn) return;
+      const current = root.getAttribute("data-theme") || "dark";
+      const next = current === "dark" ? "light" : "dark";
+      localStorage.setItem(STORAGE_KEY, next);
+      applyTheme(next);
+    });
   })();
 </script>
   </body>
