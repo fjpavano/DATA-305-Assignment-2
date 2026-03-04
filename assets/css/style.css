@@ -175,3 +175,54 @@ a:hover{ text-decoration: underline; }
 .resume-embed iframe{
   box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
+/* Resume page enhancements */
+.resume-top{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.resume-top__right{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resume-embed iframe{
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  background: rgba(255,255,255,0.02);
+}
+
+.resume-details{
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(16,26,46,.55);
+}
+
+.resume-details summary{
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--text);
+  list-style: none;
+}
+
+.resume-details summary::-webkit-details-marker{
+  display:none;
+}
+
+.resume-details summary::after{
+  content: " +";
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.resume-details[open] summary::after{
+  content: " −";
+}
