@@ -3,17 +3,25 @@ layout: default
 title: Home
 ---
 
-<section class="card hero">
-  <h1>Hi, I’m Francesco Pavano.</h1>
-  <p>
-    I’m a William & Mary student studying Finance (Innovation & Entrepreneurship concentration) with a minor in Data Science.
-    This site is my GitHub Pages hub for my resume and short write-ups.
-  </p>
+<section class="card hero hero-layout">
+  <div class="hero-text">
+    <h1>Hi, I’m Francesco Pavano.</h1>
+    <p>
+      I’m a William & Mary student studying Finance (Innovation & Entrepreneurship concentration)
+      with a minor in Data Science. This site is my GitHub Pages hub for my resume and short write-ups.
+    </p>
 
-  <div class="badges" aria-label="Contact links">
-    <a class="badge" href="mailto:fjpavano@wm.edu">Email</a>
-    <a class="badge" href="https://www.linkedin.com/in/francesco-pavano" target="_blank" rel="noreferrer">LinkedIn</a>
-    <a class="badge" href="https://github.com/fjpavano" target="_blank" rel="noreferrer">GitHub</a>
+    <div class="badges" aria-label="Contact links">
+      <a class="badge" href="mailto:fjpavano@wm.edu">Email</a>
+      <a class="badge" href="https://www.linkedin.com/in/francesco-pavano" target="_blank">LinkedIn</a>
+      <a class="badge" href="https://github.com/fjpavano" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="{{ site.baseurl }}/assets/img/headshot.jpg"
+         alt="Francesco Pavano headshot"
+         class="hero-img">
   </div>
 </section>
 
