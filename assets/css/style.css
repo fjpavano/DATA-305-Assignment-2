@@ -59,7 +59,7 @@ a:hover{ text-decoration: underline; }
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: rgba(16,26,46,.70);
+  background: var(--nav);
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
 }
@@ -96,7 +96,7 @@ a:hover{ text-decoration: underline; }
   padding: 20px;
   border-radius: 18px;
   border: 1px solid var(--border);
-  background: rgba(16,26,46,.72);
+  background: var(--card);
   box-shadow: var(--shadow);
 }
 
@@ -247,4 +247,43 @@ a:hover{ text-decoration: underline; }
 
 .resume-details[open] summary::after{
   content: " −";
+}
+.nav__right{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--chip);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.theme-toggle:hover{
+  background: var(--chipHover);
+}
+
+.theme-toggle__text{
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.badge{
+  border: 1px solid var(--border);
+  background: var(--chip);
+}
+
+.badge:hover{
+  background: var(--chipHover);
+  text-decoration: none;
 }
