@@ -224,10 +224,13 @@ a:hover{ text-decoration: underline; }
 @media (max-width: 900px){
   .grid{ grid-template-columns: 1fr; }
 }
-/* ===== Accent across ALL pages ===== */
+/* ===== Accent across ALL pages (Resume/Blog/Posts) ===== */
 
-/* Page titles (Resume, Blog, Posts) */
+/* Page titles */
 .page-title{
+  margin: 0 0 10px;
+  font-size: clamp(24px, 3vw, 34px);
+  letter-spacing: -0.01em;
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,6 +241,7 @@ a:hover{ text-decoration: underline; }
   position: relative;
   padding-left: 14px;
   margin-top: 22px;
+  margin-bottom: 10px;
 }
 
 .prose h2::before, .prose h3::before{
@@ -252,7 +256,7 @@ a:hover{ text-decoration: underline; }
   background: linear-gradient(180deg, var(--accent), var(--accent2));
 }
 
-/* Blog list links get a gradient underline on hover */
+/* Links: subtle gradient underline on hover */
 .prose a{
   text-decoration: none;
   border-bottom: 1px solid rgba(0,0,0,0);
@@ -261,11 +265,27 @@ a:hover{ text-decoration: underline; }
 .prose a:hover{
   border-bottom: 2px solid;
   border-image: linear-gradient(90deg, var(--accent), var(--accent2)) 1;
-  text-decoration: none;
 }
 
-/* Resume accordion gets a subtle accent border */
+/* Resume accordion: accent border */
 .resume-details{
-  border: 1px solid rgba(0,0,0,0); /* reset */
-  border-image: linear-gradient(90deg, var(--accent), var(--accent2)) 1;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.resume-details summary{
+  position: relative;
+  padding-left: 14px;
+}
+
+.resume-details summary::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+  width:4px;
+  height: 70%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--accent), var(--accent2));
 }
