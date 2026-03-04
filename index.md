@@ -38,19 +38,19 @@ title: Home
 
     <h2 class="section-title">Outside the classroom</h2>
 
-<div class="prose">
-  <p>
-    <strong>Competitive Soccer</strong><br>
-    As a former captain and current club player, soccer has shaped how I approach preparation and accountability. 
-    Competing at a high level has reinforced the importance of discipline, adaptability, and executing under pressure. 
-    These are lessons I carry into academic and professional settings.
-  </p>
+    <div class="prose">
+      <p>
+        <strong>Competitive Soccer</strong><br>
+        As a former captain and current club player, soccer has shaped how I approach preparation and accountability. 
+        Competing at a high level has reinforced the importance of discipline, adaptability, and executing under pressure. 
+        These are lessons I carry into academic and professional settings.
+      </p>
 
-  <p>
-    <strong>Golf & Strategic Thinking</strong><br>
-    Golf has become a personal study in patience and precision. I’m drawn to the strategic elements of the game like course      management and incremental improvement. I'm also interested in the psychological aspect. The discipline required to refine small details over time mirrors how I approach long-term goals.
-  </p>
-</div>
+      <p>
+        <strong>Golf & Strategic Thinking</strong><br>
+        Golf has become a personal study in patience and precision. I’m drawn to the strategic elements of the game like course management and incremental improvement. I'm also interested in the psychological aspect. The discipline required to refine small details over time mirrors how I approach long-term goals.
+      </p>
+    </div>
 
     <hr class="hr" />
 
@@ -63,9 +63,10 @@ title: Home
   <div class="card">
     <h2 class="section-title">Featured Post</h2>
 
-    {% assign latest = site.posts.first %}
-    {% if latest %}
-      <a class="featured" href="{{ site.baseurl }}{{ latest.url }}">
+    {% assign featured_post = site.posts | where: "featured", true | first %}
+
+    {% if featured_post %}
+      <a class="featured" href="{{ site.baseurl }}{{ featured_post.url }}">
         <img
           class="featured__img"
           src="{{ site.baseurl }}/assets/img/featured.jpg"
@@ -73,16 +74,16 @@ title: Home
           loading="lazy"
         />
         <div class="featured__meta">
-          <div class="featured__title">{{ latest.title }}</div>
-          <div class="muted">{{ latest.date | date: "%b %d, %Y" }}</div>
+          <div class="featured__title">{{ featured_post.title }}</div>
+          <div class="muted">{{ featured_post.date | date: "%b %d, %Y" }}</div>
           <p class="featured__excerpt muted">
-            {{ latest.excerpt | strip_html | truncate: 220 }}
+            {{ featured_post.excerpt | strip_html | truncate: 220 }}
           </p>
           <div class="featured__cta">Read the post →</div>
         </div>
       </a>
     {% else %}
-      <p class="muted">No posts yet.</p>
+      <p class="muted">No featured post yet.</p>
     {% endif %}
   </div>
 </section>
