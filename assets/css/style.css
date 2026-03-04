@@ -65,7 +65,11 @@ body{
   line-height: 1.6;
   transition: background .2s ease, color .2s ease;
 }
-
+.container{
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: 22px 0 50px;
+}
 a{ color: var(--accent); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
