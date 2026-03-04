@@ -304,3 +304,83 @@ a:hover{ text-decoration: underline; }
 @media (max-width: 820px){
   .grid{ grid-template-columns: 1fr; }
 }
+/* ===== ACCENT POLISH ===== */
+
+/* 1. NAV LINK ACCENT UNDERLINE */
+.nav__links a{
+  position: relative;
+}
+
+.nav__links a::after{
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 4px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+  border-radius: 2px;
+}
+
+.nav__links a:hover::after{
+  transform: scaleX(1);
+}
+
+/* 2. SECTION TITLE ACCENT BAR */
+.section-title{
+  position: relative;
+  padding-left: 12px;
+}
+
+.section-title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  border-radius: 4px;
+  background: var(--accent);
+}
+
+/* 3. HERO TITLE ACCENT GRADIENT */
+.hero h1{
+  background: linear-gradient(90deg, var(--accent), #5eead4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 4. CARD HOVER LIFT */
+.card{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+}
+
+/* Subtle glow only in dark mode */
+:root:not([data-theme="light"]) .card:hover{
+  box-shadow:
+    0 18px 50px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(122,162,255,0.15);
+}
+
+/* 5. FEATURED POST CTA ACCENT */
+.featured__cta{
+  position: relative;
+  font-weight: 800;
+}
+
+.featured__cta::after{
+  content: " →";
+  transition: transform .2s ease;
+}
+
+.featured:hover .featured__cta::after{
+  transform: translateX(4px);
+}
