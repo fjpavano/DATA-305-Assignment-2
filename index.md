@@ -49,9 +49,7 @@ title: Home
 
   <p>
     <strong>Golf & Strategic Thinking</strong><br>
-    Golf has become a personal study in patience and precision. I’m drawn to the strategic elements of the game — 
-    course management, incremental improvement, and the psychological aspect. The discipline required to refine 
-    small details over time mirrors how I approach long-term goals.
+    Golf has become a personal study in patience and precision. I’m drawn to the strategic elements of the game like course      management and incremental improvement. I'm also interested in the psychological aspect. The discipline required to refine small details over time mirrors how I approach long-term goals.
   </p>
 </div>
 
