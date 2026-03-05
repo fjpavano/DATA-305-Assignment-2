@@ -29,9 +29,17 @@ title: Home
   <div class="card">
     <h2 class="section-title">What I’m focused on</h2>
     <ul class="prose">
-      <li><strong>Finance + investing:</strong> building a stronger foundation in markets, portfolio thinking, and risk.</li>
-      <li><strong>Applied analytics:</strong> using Excel, Python, and R to turn messy data into clear decisions.</li>
-      <li><strong>Communication:</strong> writing and presenting ideas in a way that’s simple and convincing.</li>
+      <li>
+        <strong>Finance + investing:</strong> building a stronger foundation in financial markets, portfolio construction, and risk management through coursework, independent reading, and following market developments. I’m particularly interested in how disciplined capital allocation and long-term thinking drive sustainable outcomes.
+      </li>
+
+      <li>
+        <strong>Applied analytics:</strong> using tools like Excel, Python, and R to explore datasets, build simple models, and turn messy information into clearer insights. I enjoy the process of breaking down problems analytically and using data to support better decision-making.
+      </li>
+
+      <li>
+        <strong>Communication:</strong> working to communicate ideas clearly and persuasively through writing and presentations. Whether explaining an analysis or sharing a point of view, I focus on making complex ideas easier to understand and more compelling.
+      </li>
     </ul>
 
     <hr class="hr" />
